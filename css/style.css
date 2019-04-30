@@ -1,0 +1,95 @@
+.card-body {
+    padding: 0.25rem;
+}
+.body{
+    /*font-family: 'Varela Round', sans-serif;*/
+    background-image: url("/images/cards/mountain_bg.jpg");
+    background-color: #ccca92;
+    background-size: auto;
+}
+
+.card {
+    background-color: rgba(241, 163, 107, 0.06);
+    border: 1px solid rgba(0,0,0,.125);
+    /*border-radius: 2.0rem;*/
+}
+
+.btn{
+    /*border-radius: 2.0rem;*/
+}
+
+/*.card {*/
+    /*position: relative;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*-ms-flex-direction: column;*/
+    /*flex-direction: column;*/
+    /*min-width: 0;*/
+    /*word-wrap: break-word;*/
+    /*background-color: #fff;*/
+    /*background-clip: border-box;*/
+    /*border: 1px solid rgba(0,0,0,.125);*/
+    /*border-radius: .25rem;*/
+/*}*/
+
+.cardSet1{
+    background-color: #669999;
+}
+.cardSet2{
+    background-color: #cc6666;
+}
+
+.cardSet3{
+    background-color: #cc9966;
+}
+h3.card-title{
+    font-size: 1.5rem;
+}
+p.card-text{
+    padding-bottom: 0.8rem;
+    line-height: 1.2rem;
+}
+.card-deck{
+    padding-top: 1.25rem;
+
+}
+
+.container{
+    /*background-color: #ffe8a1;*/
+    padding-left:50px;
+    padding-right: 50px;
+    background-image: url("https://www.google.com/imgres?imgurl=http%3A%2F%2Fwaltir.com%2Fwp-content%2Fuploads%2F2017%2F08%2Fcropped-qtq50-UArAnS-2.jpeg&imgrefurl=http%3A%2F%2Fwaltir.com%2Fjumbotron-parallax-image-background%2F&docid=wrmHupBYvdJpiM&tbnid=L5RKShcd_SCO4M%3A&vet=10ahUKEwjgw7HHjfbhAhUViXAKHYB0CMgQMwhvKCIwIg..i&w=1500&h=687&bih=393&biw=1309&q=bootstrap%20background%20image&ved=0ahUKEwjgw7HHjfbhAhUViXAKHYB0CMgQMwhvKCIwIg&iact=mrc&uact=8");
+}
+
+.container-fluid {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    color:#FFFFFF;
+    /*background-color: #ffe8a1;*/
+}
+.hero{
+    background: url('../images/cards/b4.jpg');
+}
+.navbar{
+    /*margin-top:1.75rem;*/
+    padding-top: 10px;
+}
+.navbar-brand{
+    color: #b9bbbe;
+    font-size: 28px;
+}
+.nav-link{
+    color: #b9bbbe;
+    font-size: 16px;
+}
+.card-group{
+    margin-top: 15px;
+    /*padding-right: 15px;*/
+    border-bottom-color: #0a0a0a;
+}
+.card{
+    margin-right: 15px;
+}
+.c1{
+    margin-top: 15px;
+}
