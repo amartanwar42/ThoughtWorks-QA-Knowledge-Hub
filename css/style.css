@@ -62,25 +62,25 @@ p.card-text{
 }
 
 .container-fluid {
-    padding-top: 90px;
     padding-bottom: 100px;
+    margin-top: 10px;
     color:#FFFFFF;
     /*background-color: #ffe8a1;*/
 }
 .hero{
-    background: url('../images/cards/b4.jpg');
+    background: url('../images/cards/b3.jpg');
 }
 .navbar{
     /*margin-top:1.75rem;*/
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .navbar-brand{
-    color: #b9bbbe;
-    font-size: 28px;
+    /*color: #b9bbbe;*/
+    /*font-size: 28px;*/
 }
 .nav-link{
     color: #b9bbbe;
-    font-size: 16px;
+    font-size: 18px;
 }
 .card-group{
     margin-top: 15px;

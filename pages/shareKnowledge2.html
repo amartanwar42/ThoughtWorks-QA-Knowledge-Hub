@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<title>ThoughtWorks QA Knowledge Hub</title>
+</head>
+<body>
+
+<section class="hero is-fixed-top is-fullheight">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/cards/logo2.png" height="100">
+            <!--qaHUB-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">VodQA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  active>ShareKnowledge</a>
+                </li>
+            </ul>
+        </div>
+    </nav><br>
+
+    <div class="container-fluid">
+        <header class="header">
+            <h1 class="text-center" style="font-size: 60px">Share Knowledge</h1>
+            <!--<p class="m-xl-4 text-center" style="font-size: 30px">A common  place to learn and share knowledge</p>-->
+        </header>
+    </div>
+
+</section>
+
+
+<div class="container userDetails">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScArVhLCZoVBmgRveKXeatmW3EmCy1hH6xOg6b05II6RFmrHQ/formResponse" target="_self" method="POST" id="mG61Hd">
+    <!--<form class="" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">-->
+        <p>
+            <h3>Details of Blog/Article/Project</h3>
+        </p>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" name="entry.1748917653" id="firstname" placeholder="First Name" required >
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" name="entry.317063711" id="lastname" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="entry.699379331" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="tile">Title of Blog/Article/Project</label>
+            <input type="text" class="form-control" name="entry.2141115602" id="tile"   required>
+        </div>
+        <div class="form-group">
+            <label for="link">Link of Blog/Article/Project</label>
+            <input type="text" class="form-control" name="entry.458765858" id="link"  required>
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select class="form-control" name="entry.1448136072" id="category">
+                <option>Selenium</option>
+                <option>Appium</option>
+                <option>API Testing</option>
+                <option>QA Process in Agile</option>
+                <option>Performance Testing</option>
+                <option>Security Testing</option>
+                <option>BigDate Testing</option>
+                <option>Manual Testing</option>
+                <option>Automation Testing</option>
+                <option value="other">Other</option>
+
+            </select>
+        </div>
+
+        <div id="otherCategory2" style="display: none" class="form-group">
+            <label for="otherCategory">Other Category</label>
+            <input type="text" class="form-control" name="entry.614271131" id="otherCategory" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="shortDescription">Short Desscription</label>
+            <textarea class="form-control" name="entry.252487547" rows="3" id="shortDescription"    required></textarea>
+        </div>
+
+
+        <p></p>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- jQuery --> 
+<script src="../js/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/tether.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#category").change(function () {
+            if ($(this).val() == "other") {
+                $("#otherCategory2").show();
+            } else {
+                $("#otherCategory2").hide();
+            }
+        });
+    });
+</script>
+<script>
+    function postToGoogle() {
+        var field1 = $("#firstname").val();
+        var field2 = $("#lastname").val();
+        var field3 = $("#email").val();
+        var field4 = $("#tile").val();
+        var field5 = $("#link").val();
+        var field6 = $("#category option:selected").text();
+        var field7 = $("#otherCategory").val();
+        var field8 = $("#shortDescription").val();
+
+
+        if(field1 == ""){
+            alert('Please Fill Your Name');
+            document.getElementById("firstname").focus();
+            return false;
+        }
+        if(field2 == ""){
+            alert('Please Fill Your Email');
+            document.getElementById("lastname").focus();
+            return false;
+        }
+        if(field3 == "" ){
+            alert('Please Fill Your Mobile Number');
+            document.getElementById("email").focus();
+            return false;
+        }
+
+
+
+
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLScArVhLCZoVBmgRveKXeatmW3EmCy1hH6xOg6b05II6RFmrHQ/formResponse?",
+            data: {"entry.1748917653": field1, "entry.317063711": field2, "entry.699379331": field3, "entry.2141115602": field4, "entry.458765858": field5, "entry.1448136072": field6, "entry.614271131": field7, "entry.252487547": field8},
+            type: "POST",
+            dataType: "json",
+            success: function(response)
+            {
+
+            },
+            error: function(x, y, z)
+            {
+
+                $('#success-msg').show();
+                $('#form').hide();
+
+            }
+        });
+        return false;
+    }
+</script>
+
+</body>
+</html>
