@@ -107,7 +107,7 @@
 
 
         <p></p>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" id="Savedata" class="btn btn-primary">Submit</button>
     </form>
 </div>
 
@@ -127,6 +127,7 @@
     });
 </script>
 <script>
+
     function postToGoogle() {
         var field1 = $("#firstname").val();
         var field2 = $("#lastname").val();
@@ -153,8 +154,6 @@
             document.getElementById("email").focus();
             return false;
         }
-
-
 
 
         $.ajax({
