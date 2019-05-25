@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #f1f1f1;
+    background: #ecf0f9;
     /*background: #6c757d;*/
     /*margin: 2rem;*/
 }
@@ -115,7 +115,7 @@ body {
 }
 .blog-card .description {
     padding: 1rem;
-    background: #fff;
+    background: #FFFFFF;
     position: relative;
     z-index: 1;
 }
