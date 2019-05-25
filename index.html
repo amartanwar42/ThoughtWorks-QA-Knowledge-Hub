@@ -6,6 +6,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style5.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
 <title>ThoughtWorks QA Knowledge Hub</title>
@@ -44,87 +45,109 @@
     </div>
 
 </section>
+<br/>
+<div class="content1">
+    <h1 class="heading">Category</h1>
 
-<div class="container c1">
-    <div>
-        <h1>Categories</h1>
+    <a class="card" href="{{site.baseurl}}/../contentPage/agileContent2.html">
+        <div class="front" style="background-image: url('images/cards/Agile-QA-process.png');">
+            <p>QA Process In Agile</p>
+        </div>
+        <div class="back">
+            <div>
+                <p>Best Practices for an Agile QA Process. When it comes to software development, quality is everything. Quality Assurance (QA) is a systematic process that ensures product and service excellence.</p>
+                <!--<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>-->
+                <button class="button">Explore more..</button>
+            </div>
+        </div>
+    </a>
+
+    <a class="card" href="{{site.baseurl}}/../contentPage/automationTesting2.html">
+    <div class="front" style="background-image: url('images/cards/homePage/Automationtestingtools.jpeg');">
+        <p>Automation Testing/Tools</p>
     </div>
-    <div></div>
-    <div class="card-group">
-        <div class="card ">
-            <img class="card-img-top w-100 d-block " height="185"  src="images/cards/agile-qa.png">
-            <div class="card-body">
-                <h4 class="card-title">QA Process In Agile</h4>
-                <p class="card-text">Best Practices for an Agile QA Process. When it comes to software development, quality is everything. Quality Assurance (QA) is a systematic process that ensures product and service excellence.</p>
-                <a href="{{site.baseurl}}/../contentPage/agileContent.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card ">
-            <img class="card-img-top w-100 d-block" height="185" src="images/cards/automation-testing.jpg">
-            <div class="card-body">
-                <h4 class="card-title">Automation Testing/Tools</h4>
-                <p class="card-text">Automation testing is a Software testing technique to test and compare the actual outcome with the expected outcome. This can be achieved by writing test scripts or using any automation testing tool.</p>
-                <a href="{{site.baseurl}}/../contentPage/automationTesting.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top w-100 d-block" height="185" src="images/cards/security%20testing.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Security Testing</h4>
-                <p class="card-text">SECURITY TESTING is a type of software testing that intends to uncover vulnerabilities of the system and determine that its data and resources are protected from possible intruders.</p>
-                <a href="{{site.baseurl}}/../contentPage/securityTestingContent.html"  class="btn btn-dark btn-sm float-right">Explore</a></div>
+    <div class="back">
+        <div>
+            <p>Automation testing is a Software testing technique to test and compare the actual outcome with the expected outcome. This can be achieved by writing test scripts or using any automation testing tool</p>
+            <button class="button">Explore more..</button>
         </div>
     </div>
-    <div class="card-group">
-        <div class="card"><img class="card-img-top w-100 d-block "height="185" src="images/cards/selenium2.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Selenium</h4>
-                <p class="card-text">Selenium is an open source tool which is used for automating the tests carried out on web browsers (Web applications are tested using any web browser).</p>
-                <br>
-                <a href="{{site.baseurl}}/../contentPage/seleniumContent.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card"><img class="card-img-top w-100 d-block" height="185" src="images/cards/appium.jpeg"/>
-            <div class="card-body">
-                <h4 class="card-title">Appium</h4>
-                <p class="card-text">Appium is an open source test automation framework for use with native, hybrid and mobile web apps. It drives iOS, Android, and Windows apps using the WebDriver protocol.</p>
-                <a href="{{site.baseurl}}/../contentPage/appiumContent.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card"><img class="card-img-top w-100 d-block" height="185" src="images/cards/api.png">
-            <div class="card-body">
-                <h4 class="card-title">API Testing</h4>
-                <p class="card-text">API testing is a type of software testing that involves testing (APIs) directly and as part of integration testing to determine if they meet expectations for functionality, reliability, performance, and security.</p>
-                <a href="{{site.baseurl}}/../contentPage/apiContent.html" class="btn btn-dark btn-sm float-right">Explore</a></div>
+    </a>
+
+    <a class="card" href="{{site.baseurl}}/../contentPage/securityTestingContent2.html">
+    <div class="front" style="background-image: url('images/cards/homePage/Securitytesting.jpg      ');">
+        <p>Security Testing</p>
+    </div>
+    <div class="back">
+        <div>
+            <p>SECURITY TESTING is a type of software testing that intends to uncover vulnerabilities of the system and determine that its data and resources are protected from possible intruders</p>
+            <button class="button">Explore more..</button>
         </div>
     </div>
-    <div class="card-group">
-        <div class="card "><img class="card-img-top w-100 d-block " height="185" src="images/cards/infra.jpg">
-            <div class="card-body">
-                <h4 class="card-title">Infra Testing</h4>
-                <p class="card-text">Infrastructure testing is that part of a test project covering the product risks that relate to the target infrastructure. Typical projects with such product risks include hardware migrations, lifecycle management projects or newly built system deliveries.</p>
-                <a href="{{site.baseurl}}/../contentPage/infraTestingContent.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card"><img class="card-img-top w-100 d-block" height="185" src="images/cards/testTechniques.jpg"/>
-            <div class="card-body">
-                <h4 class="card-title">Testing Techniques</h4>
-                <p class="card-text">Software testing Techniques help you design better cases. Since exhaustive testing is not possible; Testing Techniques help reduce the number of test cases to be executed while increasing test coverage.</p>
-                <br>
-                <a href="{{site.baseurl}}/../contentPage/testTechniques.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top w-100 d-block" height="185" src="images/cards/bigDataTesting/bigdata.jpg">
-            <div class="card-body">
-                <h4 class="card-title">BigData Testing</h4>
-                <p class="card-text">It is defined as testing of Bigdata applications. It is a collection of large datasets that cannot be processed using traditional computing techniques. Testing of these datasets involves various tools, techniques, and frameworks to process.</p>
-                <a href="{{site.baseurl}}/../contentPage/bigDataTestingContent.html" class="btn btn-dark btn-sm float-right">Explore</a>
-            </div>
-        </div>
+    </a>
+
+    <a class="card" href="{{site.baseurl}}/../contentPage/seleniumContent2.html">
+    <div class="front" style="background-image: url('images/cards/homePage/Selenium.jpg');">
+        <p>Selenium</p>
     </div>
+    <div class="back">
+        <div>
+            <p>Selenium is an open source tool which is used for automating the tests carried out on web browsers (Web applications are tested using any web browser).</p>
+            <button class="button">Explore more..</button>
+        </div>
+    </div></a><a class="card" href="{{site.baseurl}}/../contentPage/appiumContent2.html">
+    <div class="front" style="background-image: url('images/cards/homePage/appium.jpg');">
+        <p>Appium</p>
+    </div>
+    <div class="back">
+        <div>
+            <p>Appium is an open source test automation framework for use with native, hybrid and mobile web apps. It drives iOS, Android, and Windows apps using the WebDriver protocol</p>
+            <button class="button">Explore more..</button>
+        </div>
+    </div></a>
+    <a class="card" href="{{site.baseurl}}/../contentPage/apiContent2.html">
+    <div class="front" style="background-image: url('images/cards/homePage/apitesting.png');">
+        <p>API Testing</p>
+    </div>
+    <div class="back">
+        <div>
+            <p>API testing is a type of software testing that involves testing (APIs) directly and as part of integration testing to determine if they meet expectations for functionality, reliability, performance, and security</p>
+            <button class="button">Explore more..</button>
+        </div>
+    </div></a>
+
+    <a class="card" href="{{site.baseurl}}/../contentPage/infraTestingContent2.html">
+        <div class="front" style="background-image: url('images/cards/homePage/infrastructure.jpg');">
+            <p>Infra Testing</p>
+        </div>
+        <div class="back">
+            <div>
+                <p>Infrastructure testing is that part of a test project covering the product risks that relate to the target infrastructure. Typical projects with such product risks include hardware migrations, lifecycle management projects or newly built system deliveries</p>
+                <button class="button">Explore more..</button>
+            </div>
+        </div></a>
+    <a class="card" href="{{site.baseurl}}/../contentPage/testTechniques2.html">
+        <div class="front" style="background-image: url('images/cards/homePage/testingtechniques.jpg');">
+            <p>Testing Techniques</p>
+        </div>
+        <div class="back">
+            <div>
+                <p>Software testing Techniques help you design better cases. Since exhaustive testing is not possible; Testing Techniques help reduce the number of test cases to be executed while increasing test coverage</p>
+                <button class="button">Explore more..</button>
+            </div>
+        </div></a>
+    <a class="card" href="{{site.baseurl}}/../contentPage/bigDataTestingContent2.html">
+        <div class="front" style="background-image: url('images/cards/homePage/bigdata.jpg');">
+            <p>BigData Testing</p>
+        </div>
+        <div class="back">
+            <div>
+                <p>It is defined as testing of Bigdata applications. It is a collection of large datasets that cannot be processed using traditional computing techniques. Testing of these datasets involves various tools, techniques, and frameworks to process</p>
+                <button class="button">Explore more..</button>
+            </div>
+        </div></a>
+
 </div>
-
 <!-- jQuery --> 
 <script src="js/jquery-3.2.1.slim.min.js"></script> 
 <script src="js/tether.min.js"></script> 
