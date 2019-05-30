@@ -1,9 +1,18 @@
-.hero{
+section.hero{
     margin:0;
     padding:0;
     height: 450px;
     font-family: sans-serif;
     background: url("../images/cards/b3.jpg");
+    background-size: cover;
+}
+
+section.contentPage{
+    margin:0;
+    padding:0;
+    height: 450px;
+    font-family: sans-serif;
+    background: url("../images/cards/b2.jpg");
     background-size: cover;
 }
 
@@ -118,7 +127,7 @@ header nav ul li a.active{
     header nav {
         position: absolute;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 2.2rem;
         height: calc(100vh - 550px);
         background: #333;
         top: 50px;
@@ -145,12 +154,27 @@ header nav ul li a.active{
 
     }
 
+    section.contentPage{
+
+        height: 400px;
+
+    }
+
     section div.landingPageText{
         padding-top: 8rem;
         color: #FFFFFF;
     }
 
+    section div.contentPageText{
+        padding-top: 10rem;
+        color: #FFFFFF;
+    }
+
     section div.landingPageText h1.heading-landingpage{
+        font-size: 33px;
+    }
+
+    section div.contentPageText h1.heading-contentpage{
         font-size: 33px;
     }
 
@@ -175,11 +199,19 @@ header nav ul li a.active{
     font-size: 50px;
 }
 
-.para-landingpage{
-    font-size: 30px;
+
+.heading-contentpage{
+    font-size: 50px;
 }
 
+section div.landingPageText p.para-landingpage{
+    font-size: 25px;
+}
 .landingPageText {
+    padding-top: 12rem;
+    color: #FFFFFF;
+}
+.contentPageText {
     padding-top: 12rem;
     color: #FFFFFF;
 }
