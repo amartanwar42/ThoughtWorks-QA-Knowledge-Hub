@@ -1,0 +1,127 @@
+.hero{
+    margin:0;
+    padding:0;
+    height: 450px;
+    font-family: sans-serif;
+    background: url("../images/cards/b3.jpg");
+    background-size: cover;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0 100px;
+    background: transparent;
+    width: 100%;
+    /*box-sizing: border-box;*/
+}
+
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+header nav{
+    float: right;
+    font-size: 1.1rem;
+}
+
+header nav ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    margin-top: 2rem;
+}
+
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none!important;
+    display: block;
+
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #FFF;
+    background: #2196f3;
+}
+
+.menu-toggle{
+
+    color:#FFFFFF;
+    float: right;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin-top: 2rem;
+}
+
+@media(max-width: 991px)  {
+
+    header{
+        padding: 0 20px;
+
+    }
+    .menu-toggle{
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        margin-top: 2rem;
+        height: calc(100vh - 300px);
+        background: #333;
+        top: 50px;
+        left:-100%;
+        transition: 0.5s;
+
+    }
+    header nav.active{
+        left:0;
+    }
+
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a{
+        border-bottom:1px solid rgba(0,0,0,0.2);
+    }
+
+    .hero{
+        margin:0;
+        padding:0;
+        height: 500px;
+        font-family: sans-serif;
+        background: url("../images/cards/b4.jpg");
+        background-size: cover;
+    }
+    .landingPageText {
+        padding-top: 5rem;
+        color: #FFFFFF;
+    }
+
+}
+.landingPageText {
+    padding-top: 12rem;
+    color: #FFFFFF;
+}
+
