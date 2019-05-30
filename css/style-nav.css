@@ -45,7 +45,40 @@ header nav ul{
 
 header nav ul li{
     list-style: none;
+    position: relative;
 }
+
+header nav ul li.sub-menu:before{
+   content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    Line-height: 50px;
+    color: #fff;
+    right: 5px;
+
+}
+header nav ul li.active.sub-menu:before{
+    content: '\f0d8';
+}
+
+header nav ul li ul{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+
+header nav ul li ul li{
+    display: block;
+    width: 200px;
+}
+
+header nav ul li.active ul{
+    display: block;
+}
+
 header nav ul li a{
     height: 50px;
     line-height: 50px;
@@ -86,7 +119,7 @@ header nav ul li a.active{
         position: absolute;
         width: 100%;
         margin-top: 2rem;
-        height: calc(100vh - 300px);
+        height: calc(100vh - 550px);
         background: #333;
         top: 50px;
         left:-100%;
@@ -106,22 +139,49 @@ header nav ul li a.active{
         border-bottom:1px solid rgba(0,0,0,0.2);
     }
 
-    .hero{
-        margin:0;
-        padding:0;
-        height: 500px;
-        font-family: sans-serif;
-        background: url("../images/cards/b4.jpg");
-        background-size: cover;
+    section.hero{
+
+        height: 400px;
+
     }
-    .landingPageText {
-        padding-top: 5rem;
+
+    section div.landingPageText{
+        padding-top: 8rem;
         color: #FFFFFF;
     }
 
+    section div.landingPageText h1.heading-landingpage{
+        font-size: 33px;
+    }
+
+    section div.landingPageText p.para-landingpage{
+        font-size: 20px;
+    }
+
+
+    header nav ul li.active ul{
+        position: relative;
+    }
+
+    header nav ul li ul li{
+        width: 100%;
+    }
+
+
+
 }
+
+.heading-landingpage{
+    font-size: 50px;
+}
+
+.para-landingpage{
+    font-size: 30px;
+}
+
 .landingPageText {
     padding-top: 12rem;
     color: #FFFFFF;
 }
+
 

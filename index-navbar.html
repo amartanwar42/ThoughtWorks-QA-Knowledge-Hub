@@ -23,14 +23,35 @@
             <nav >
                 <ul >
                     <li>
-                        <a href="https://thoughtworks-bangalore.github.io/vodQA/">Vodqa</a>
+                        <a  href="pages/events.html">Event</a>
                     </li>
                     <li>
-                        <a href="https://thoughtworks-bangalore.github.io/vodQA/">Event</a>
+                        <a href="pages/shareKnowledge2.html">Share Knowledge</a>
                     </li>
-                    <li>
-                        <a href="https://thoughtworks-bangalore.github.io/vodQA/">Share Knowledge</a>
+                    <li class="sub-menu">
+                        <a href="#">Vodqa</a>
+                        <ul>
+                            <li>
+                                <a href="https://thoughtworks-bangalore.github.io/vodQA/" target="_blank">Bangalore</a>
+                            </li>
+                            <li>
+                                <a href="http://twchennai.github.io/VODQA-Chennai/" target="_blank">Chennai</a>
+                            </li>
+                            <li>
+                                <a href="https://twhyderabad.github.io/vodqa/" target="_blank">Hyderabad</a>
+                            </li>
+                            <li>
+                                <a href="https://twpune.github.io/vodqa/" target="_blank">Pune</a>
+                            </li>
+                            <li>
+                                <a href="http://twggn.github.io/vodqa/" target="_blank">Gurgaon</a>
+                            </li>
+                            <li>
+                                <a href="https://twcbe.github.io/vodqa/" target="_blank">Coimbatore</a>
+                            </li>
+                        </ul>
                     </li>
+
                 </ul>
             </nav>
 
@@ -40,8 +61,8 @@
 
 
     <div class="landingPageText" align="center" >
-        <h1 class="text-center" style="font-size: 50px">ThoughtWorks QA Knowledge Hub</h1>
-        <p class="m-xl-4 text-center" style="font-size: 30px">A common place to learn and share knowledge</p>
+        <h1 class="heading-landingpage" >ThoughtWorks QA Knowledge Hub</h1>
+        <p class="para-landingpage" >A common place to learn and share knowledge</p>
     </div>
 
 </section>
@@ -77,7 +98,7 @@
     </a>
 
     <a class="card" href="{{site.baseurl}}/../contentPage/securityTestingContent2.html">
-    <div class="front" style="background-image: url('images/cards/homePage/Securitytesting.jpg      ');">
+    <div class="front" style="background-image: url('images/cards/homePage/Securitytesting.jpg');">
         <p>Security Testing</p>
     </div>
     <div class="back">
@@ -159,6 +180,12 @@
     $(document).ready(function () {
         $('.menu-toggle').click(function () {
             $('nav').toggleClass('active')
+        })
+
+        $('ul li').click(function () {
+            $(this).siblings().removeClass('active');
+            $(this).toggleClass('active');
+            
         })
 
     })
