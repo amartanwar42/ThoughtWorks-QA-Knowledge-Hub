@@ -133,11 +133,12 @@ header nav ul li a.active{
         position: absolute;
         width: 100%;
         margin-top: 2.2rem;
-        height: calc(100vh - 550px);
+        height: calc(100vh);
         background: #333;
         top: 50px;
         left:-100%;
         transition: 0.5s;
+        z-index: 1000;
 
     }
     header nav.active{
