@@ -50,11 +50,13 @@ header nav ul{
     padding:0;
     display: flex;
     margin-top: 2rem;
+
 }
 
 header nav ul li{
     list-style: none;
     position: relative;
+    z-index: 1000;
 }
 
 header nav ul li.sub-menu:before{
@@ -64,6 +66,7 @@ header nav ul li.sub-menu:before{
     Line-height: 50px;
     color: #fff;
     right: 5px;
+    z-index: 1000;
 
 }
 header nav ul li.active.sub-menu:before{
