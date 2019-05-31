@@ -67,10 +67,12 @@ header nav ul li.sub-menu:before{
     color: #fff;
     right: 5px;
     z-index: 1000;
+    display: block;
 
 }
 header nav ul li.active.sub-menu:before{
     content: '\f0d8';
+    display: block;
 }
 
 header nav ul li ul{
